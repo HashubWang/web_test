@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  charset="utf-8">
+<title>内联元素</title>
+
+<style>
+span{
+    background-color: red;
+    padding: 10px;
+}
+.spanclass{
+    background-color: blue;
+    display:block;
+    width: 50%;
+
+}
+p{
+    background-color: yellow;
+    padding: 20px;
+    border: 2px solid black;
+}
+.secondspanclass{
+    background-color:aquamarine;
+    padding: 0;
+    /* width无效 */
+    width: 500px;
+}
+.thirdspanclass{
+    display: inline-block;
+    width: 30px;
+}
+#shadow{
+    text-shadow: 3px 5px 4px black;
+}
+ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
+ul li{
+    padding-left: 2rem;
+    background-image: url(img/star.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body>
+    <p id="shadow">text shadow</p>
+    <ul>unorder list
+        <li>onr</li>
+        <li>thre</li>
+        <li>jiasd</li>
+        <li>sda</li>
+        <li>dsac</li>
+    </ul>
+    <ol>
+        <li value="1">first</li>
+        <li value="3">second</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+<p>联机搜啊等阿达上的按时大上的阿萨德仅仅仅仅<span>军jjjjjjjjjjjjajsdi a仅仅仅仅军军军军军军军军军军军军军军</span>你好军军军军军</p>
+<span class="spanclass">this is a span element</span>
+<span class="secondspanclass">this is second span element</span>
+联机搜啊等阿达上的按时大上的阿萨德<span class="thirdspanclass">nihao</span>联机搜啊等阿达上的按时大上的阿萨德仅仅仅仅联机搜啊等阿达上的按时大上的阿萨德仅仅仅仅
+</body>
+</html>

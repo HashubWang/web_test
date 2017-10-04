@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* body{ */
+        /* color: green; */
+    /* } */
+    div {
+  width  : 60px;
+  height : 60px;
+  border : 20px solid rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin : 20px 0;
+
+  background-size    : 140px;
+  background-position: center;
+  background-image   : url('https://mdn.mozillademos.org/files/11947/ff-logo.png');
+  background-color   : gold;
+}
+
+.default     { background-clip: border-box;  }
+.padding-box { background-clip: padding-box; }
+.content-box { background-clip: content-box; }
+    .inherit a{
+        color: inherit;
+    }
+    .initial a{
+        color: initial;
+    }
+    .unset a{
+        color: unset;
+    }
+    p{
+        background-color: red;
+
+        padding: 0px;
+        border: 20px solid green;
+        width: 500px;
+        
+    }
+        </style>
+</head>
+<body>
+        <div class="default"></div>
+        <div class="padding-box"></div>
+        <div class="content-box"></div>
+    <p>this is a demo </p>
+    <ul>
+        <li>Default <a href="#">link</a> color</li>
+        <li class="inherit">Inherit the <a href="#">link</a> color</li>
+        <li class="initial">Reset the <a href="#">link</a> color</li>
+        <li class="unset">Unset the <a href="#">link</a> color</li>
+    </ul>
+</body>
+</html>

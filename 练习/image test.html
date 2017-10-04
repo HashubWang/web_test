@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>image</title>
+    <style>
+        html{
+            background: #ccc;
+        }
+        .one, .two {
+        background: red;
+        width: 300px;
+        height: 150px;
+        padding: 20px;
+        border: 10px solid black;
+        margin: 20px auto;
+    }
+    .two {
+        box-sizing: border-box;
+    }
+    body{
+        width:70%;
+        max-width: 1280px;
+        min-width: 480px;
+        margin: 0 auto;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <h1>html image</h1>
+    <figure>
+        <img src="../img/img01.jpg" alt="this is alt text" title="this is title text">
+        <figcaption>A figcaption text</figcaption>
+    </figure>
+</body>
+<script>
+        var one = document.querySelector('.one');
+        var two = document.querySelector('.two');
+        
+        function outputWH(box) {
+          var width = box.offsetWidth;
+          var height = box.offsetHeight;
+          box.textContent = 'Width: ' + width + 'px, Height: ' + height + 'px.'
+        }
+        
+        outputWH(one);
+        outputWH(two);
+        </script>
+</html>

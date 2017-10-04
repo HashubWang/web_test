@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width: 300px;
+        padding: 20px;
+        margin: 10px auto;
+        line-height: 3;
+        background-color: #f66;
+        text-align: center;
+        border: 20px solid black;
+        border-width: 20px;
+        background-clip: padding-box;
+        border-image-source: url(https://mdn.mozillademos.org/files/13060/border-image.png);
+        border-image-slice: 40;
+        border-image-repeat: round;  
+        /* border-image-width: 10px;  */
+        border-image-outset: 20px;
+    }
+    
+    #but1{
+        width: 150px;
+  font-size: 1.1rem;
+  line-height: 2;
+  border-radius: 10px;
+  border: none;
+  background-image: linear-gradient(to bottom right, #777, #ddd);
+  box-shadow: 1px 1px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+    }
+    #but1:focus, #but1:hover{
+        background-image: linear-gradient(to bottom right, #888, #eee);
+    }
+    #but1:active{
+        box-shadow: inset 2px 2px 1px black,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+    }
+    #but2{
+        
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <p>border image</p>
+    </div>
+    <button id="but1">button</button>
+    <button id="but2">press me !</button>
+</body>
+</html>

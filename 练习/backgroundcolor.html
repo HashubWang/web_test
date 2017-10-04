@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         p{
+             
+              /* background-image: repeating-linear-gradient(to right, yellow, orange 25px, red 50px); */
+            
+         }
+         span{
+             background-image:linear-gradient(to bottom,orange,yellow);
+         }
+         * {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+div {
+  width: 220px;
+  padding: 20px;
+  margin: 10px;
+  line-height: 2;
+  background-color: yellow;
+  text-align: center;
+  display: inline-block;
+}
+
+.complete1 {
+  border-style: solid;
+  border-radius: 10px 30px/20px 10px;
+}
+.complete2{
+    border-style: solid;
+    border-radius: 10px/20px;
+}
+
+.written {
+  border-style: dashed;
+}
+
+.incomplete {
+  border-style: dotted;
+}
+
+.writing, .review {
+  border-bottom: 6px solid red;
+}
+      
+         </style>
+</head>
+<body>
+    <p>this is parent element  !!</p>
+    <div class="complete1">
+        <p>complete</p>
+      </div>
+      
+      <div class="complete2">
+        <p>complete</p>
+      </div>
+      
+      <div class="written review">
+        <p>written review</p>
+      </div>
+      
+      <div class="written">
+        <p>written</p>
+      </div>
+      
+      <div class="incomplete writing">
+        <p>incomplete writing</p>
+      </div>
+      
+      <div class="incomplete">
+        <p>incomplete</p>
+      </div>
+      
+      <div class="incomplete">
+        <p>incomplete</p>
+      </div>
+</body>
+</html>

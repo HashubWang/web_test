@@ -1,0 +1,25 @@
+p{
+    color: maroon;
+}
+h1,h2{
+    font-family: sans-serif;
+    color: gray;
+    border-bottom: 1px solid black;
+}
+h1{
+   text-align: center;
+}
+h3{
+    background-color: gray;
+    padding: 25px;
+    margin: 30px;
+}
+p.up_in_the_img{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+
+}
+p.backgrand{
+    background-image: url(img/backgrand.jpg)
+}
