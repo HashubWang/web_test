@@ -8,18 +8,42 @@
 
 </head>
 <body>
-    <button>button</button>
+    <!-- <button>button</button> -->
+    <script>
+    for (var i = 0; i < 5; i++) {
+        
+        for (var j = 0; j < i+1; j++) {
+            document.write("*");
+            
+        }
+        document.write("<br>");
+        
+    }
+    //打印乘法表 
+    var ol = 1;
+    for (var x = 1; x < 10; x++) {
+        var li = x;       
+        for (var y = 1; y < x+1; y++) {
+            
+            document.write( y + "*" + li +'=' +y*li+"|");
+            ol++;
+        }
+       document.write("<br>");
+    }
 
+    
+
+</script>
 
     <script>
-    var but = document.querySelector("button");
-    but.addEventListener('click', updateName);
+//     var but = document.querySelector("button");
+//     but.addEventListener('click', updateName);
 
-    function updateName(){
-        var name = prompt("enter your name :");
-        but.textContent = "show you " + name;
-    }
+//     function updateName(){
+//         var name = prompt("enter your name :");
+//         but.textContent = "show you " + name;
+//     }
     
-    </script>
+//     </script>
 </body>
 </html>
