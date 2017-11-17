@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>abvanced widgets</title>
+</head>
+<body>
+    <input type="number" name="age" id="age" min="1" max="10" step="2">
+    <label for="beans">How many beans can you eat?</label>
+    <input type="range" name="beans" id="beans" min="0" max="500" step="10">
+    <span class="beancount"></span>
+    <input type="color" name="month" id="month">
+
+<input type="file" name="file" id="file" accept="image/*" multiple>
+<progress max="100" value="75">75/100</progress>
+<meter min="0" max="100" value="75" low="33" high="66" optimum="50">75</meter>
+
+
+    <script>
+    var beans = document.querySelector('#beans');
+    var count = document.querySelector('.beancount');
+
+    count.textContent = beans.value;
+
+    beans.oninput = function(){
+        count.textContent = beans.value;
+    }
+    
+    
+    </script>
+</body>
+</html>

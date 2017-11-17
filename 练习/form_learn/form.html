@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #msg{
+        resize: none
+    }
+    
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" >
+        </div>
+        <div>
+            <label for="mail">E-mail</label>
+            <input type="text" id="mail">
+           
+        </div>        
+        <div>
+            <label for="msg">Mseeage</label>
+            <textarea id="msg"></textarea>
+        </div>
+        <input type="password" id="pwd" name="pwd">
+
+        <!-- <select multiple id="groups" name="groups">
+            <optgroup label="fruits">
+              <option>Banana</option>
+              <option selected>Cherry</option>
+              <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+          </select>
+           -->
+          <label for="myFruit">What is your favorite fruit? (With fallback)</label>
+          <input type="text" id="myFruit" name="fruit" list="fruitList">
+              
+          <datalist id="fruitList">
+            <label for="suggestion">or pick a fruit</label>
+            <select id="suggestion" name="altFruit">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Blackberry</option>
+              <option>Blueberry</option>
+              <option>Lemon</option>
+              <option>Lychee</option>
+              <option>Peach</option>
+              <option>Pear</option>
+            </select>
+          </datalist>  
+        <input checked type="checkbox" name="chechbox" id="checkbox" value="I'm a checkbox">
+        <input checked type="checkbox" name="chechbox2" id="checkbox2" value="I'm a checkbox2">
+<input type="radio" name="radiobox" id="radiobox">
+<input type="radio" name="radiobox" id="radiobox2">
+    </form>
+<button type="reset">this is a reset button</button>
+<button >this is a anonymous button</button>
+
+
+
+</body>
+</html>
