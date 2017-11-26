@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input:invalid{
+        border: 2px dashed red;
+    }
+    input:valid{
+        border: 2px solid black;
+    }
+    
+    </style>
+</head>
+<body>
+    <form>
+        <label for="choose">Would you like prefer a banana or chreey?</label>
+        <input id="choose" name="_like" required>
+        <button>Submit</button>
+    </form>
+
+    <form>
+        <label for="mail">I would like you to provide me an e-mail</label>
+        <input type="email" name="mail" id="mail">
+        <button>Submit</button>
+    </form>
+    
+
+<script>
+var email = document.getElementById('mail');
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
+
+</script>
+</body>
+</html>
